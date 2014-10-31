@@ -14,8 +14,8 @@
 		BC92DD8319FFCF660087AB16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC92DD8219FFCF660087AB16 /* Images.xcassets */; };
 		BC92DD8619FFCF660087AB16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC92DD8419FFCF660087AB16 /* LaunchScreen.xib */; };
 		BC92DD9219FFCF660087AB16 /* Messages_TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC92DD9119FFCF660087AB16 /* Messages_TestTests.m */; };
-		BCF083891A01198F00D76885 /* WylioIO.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF083881A01198F00D76885 /* WylioIO.m */; };
-		BCF0838C1A011E3B00D76885 /* WylioBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BCF0838B1A011E3B00D76885 /* WylioBoard.m */; };
+		BCDCA3BB1A038BA400433BC8 /* WylioBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCA3B81A038BA400433BC8 /* WylioBoard.m */; };
+		BCDCA3BC1A038BA400433BC8 /* WylioIO.m in Sources */ = {isa = PBXBuildFile; fileRef = BCDCA3BA1A038BA400433BC8 /* WylioIO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,10 +42,10 @@
 		BC92DD8B19FFCF660087AB16 /* Messages TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Messages TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC92DD9019FFCF660087AB16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BC92DD9119FFCF660087AB16 /* Messages_TestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Messages_TestTests.m; sourceTree = "<group>"; };
-		BCF083871A01198F00D76885 /* WylioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WylioIO.h; sourceTree = "<group>"; };
-		BCF083881A01198F00D76885 /* WylioIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WylioIO.m; sourceTree = "<group>"; };
-		BCF0838A1A011E3B00D76885 /* WylioBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WylioBoard.h; sourceTree = "<group>"; };
-		BCF0838B1A011E3B00D76885 /* WylioBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WylioBoard.m; sourceTree = "<group>"; };
+		BCDCA3B71A038BA400433BC8 /* WylioBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WylioBoard.h; path = ../../src/WylioBoard.h; sourceTree = "<group>"; };
+		BCDCA3B81A038BA400433BC8 /* WylioBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WylioBoard.m; path = ../../src/WylioBoard.m; sourceTree = "<group>"; };
+		BCDCA3B91A038BA400433BC8 /* WylioIO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WylioIO.h; path = ../../src/WylioIO.h; sourceTree = "<group>"; };
+		BCDCA3BA1A038BA400433BC8 /* WylioIO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WylioIO.m; path = ../../src/WylioIO.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +87,10 @@
 		BC92DD7419FFCF660087AB16 /* Messages Test */ = {
 			isa = PBXGroup;
 			children = (
+				BCDCA3B71A038BA400433BC8 /* WylioBoard.h */,
+				BCDCA3B81A038BA400433BC8 /* WylioBoard.m */,
+				BCDCA3B91A038BA400433BC8 /* WylioIO.h */,
+				BCDCA3BA1A038BA400433BC8 /* WylioIO.m */,
 				BC92DD7919FFCF660087AB16 /* AppDelegate.h */,
 				BC92DD7A19FFCF660087AB16 /* AppDelegate.m */,
 				BC92DD7C19FFCF660087AB16 /* ViewController.h */,
@@ -95,10 +99,6 @@
 				BC92DD8219FFCF660087AB16 /* Images.xcassets */,
 				BC92DD8419FFCF660087AB16 /* LaunchScreen.xib */,
 				BC92DD7519FFCF660087AB16 /* Supporting Files */,
-				BCF0838A1A011E3B00D76885 /* WylioBoard.h */,
-				BCF0838B1A011E3B00D76885 /* WylioBoard.m */,
-				BCF083871A01198F00D76885 /* WylioIO.h */,
-				BCF083881A01198F00D76885 /* WylioIO.m */,
 			);
 			path = "Messages Test";
 			sourceTree = "<group>";
@@ -229,11 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF083891A01198F00D76885 /* WylioIO.m in Sources */,
-				BCF0838C1A011E3B00D76885 /* WylioBoard.m in Sources */,
 				BC92DD7E19FFCF660087AB16 /* ViewController.m in Sources */,
 				BC92DD7B19FFCF660087AB16 /* AppDelegate.m in Sources */,
+				BCDCA3BC1A038BA400433BC8 /* WylioIO.m in Sources */,
 				BC92DD7819FFCF660087AB16 /* main.m in Sources */,
+				BCDCA3BB1A038BA400433BC8 /* WylioBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
