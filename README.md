@@ -11,7 +11,7 @@ Wyliodrin API
 -------------
 Create a new Python project and write
 
-    #import wyliodrin
+    # import wyliodrin
     from wyliodrin import *
     
     # define a function for receiving messages
