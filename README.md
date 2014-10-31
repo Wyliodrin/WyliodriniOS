@@ -7,6 +7,12 @@ To send messages, you need to set up two parts:
   * one on the board (via Wyliodrin)
   * one on the iOS device (via this SDK)
 
+Semantics
+---------
+You cand send two types of messages:
+  * open messages - messages send based on a communication_token speicfic for each board. Thsi must be specifically enabled in the Wyliodrin Web Interface. We suggest using this method for sending fast messages to a board.
+  * messages - messages send based on a user communication_token and a boardid. This is enabled by default
+
 Wyliodrin API
 -------------
 Create a new Python project and write
