@@ -1,7 +1,7 @@
 WyliodriniOS
 ============
 
-This allows you to send messages to your boards connected to Wyliodrin.
+This allows you to send messages to your boards connected to Wyliodrin. The API is still in beta.
 
 To send messages, you need to set up two parts:
   * one on the board (via Wyliodrin)
@@ -20,3 +20,15 @@ Create a new Python project and write
       
     # register for messages on label 'label'
     openConnection('label', messages)
+
+iOS API
+-------
+
+Create a new iOS project and place the .h and .m fils inside it. This will give you access 
+to the class WylioBoard. Here is are some usage exampe:
+
+    // Send open messages
+    [WylioBoard sendOpenMessageWithToken:@"..." label:@"label" message:@"..."];
+    
+    // send a message
+    [WylioBoard sendMessageWithToken:@"..." boardid:@"..." label:@"label" message:@"..."];
