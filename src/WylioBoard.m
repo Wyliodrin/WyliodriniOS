@@ -14,18 +14,20 @@
 @synthesize communication_token;
 @synthesize boardid;
 
--(void)initWithCommunicationToken:(NSString*)_communication_token
+-(id)initWithCommunicationToken:(NSString*)_communication_token
 {
     self.communication_token = _communication_token;
+    return self;
 }
 
--(void)initWithCommunicationToken:(NSString*)_communication_token andBoardID:(NSString*)_boardid
+-(id)initWithCommunicationToken:(NSString*)_communication_token andBoardID:(NSString*)_boardid
 {
     self.communication_token = _communication_token;
     self.boardid = _boardid;
+    return self;
 }
 
--(void)sendOpenMessageWithLabel:(NSString*)label message:(id)message
+-(void)sendMessageWithLabel:(NSString*)label message:(id)message
 {
     if (boardid==nil)
     {
