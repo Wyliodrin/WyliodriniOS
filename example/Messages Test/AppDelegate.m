@@ -18,8 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    WylioBoard *board = [WylioBoard alloc] init
-    [WylioBoard sendOpenMessageWithToken:@"414eb761-513e-4495-9ab1-4cb136e43f8008f656f4-e2ed-4a68-9102-fecbfd7f07f5c37030ac-d043-4dd4-ad1e-e3d15f985016b255eb39-faf4-4dcf-b9e9-8b47b720b36d" label:@"label" message:[NSNumber numberWithFloat:8]];
+    WylioBoard *board = [[WylioBoard alloc] initWithCommunicationToken:@"..."];
+    [board sendMessageWithLabel:@"label" message:[NSNumber numberWithFloat:8]];
     return YES;
 }
 
