@@ -11,8 +11,12 @@ Wyliodrin API
 -------------
 Create a new Python project and write
 
+    #import wyliodrin
     from wyliodrin import *
     
-    def myFunction(sender, label, error, message):
+    # define a function for receiving messages
+    def messages(sender, label, error, message):
       print(''.join([str(temp_value) for temp_value in [label, ':<', sender, '> ', message]]))
-      openConnection('label', message)
+      
+    # register for messages on label 'label'
+    openConnection('label', messages)
